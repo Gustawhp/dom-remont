@@ -1,0 +1,172 @@
+.sectionHome {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1250px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.containerHome {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.mainHome {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 500px);
+}
+
+.mainHome p {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 3rem;
+  text-indent: 3rem;
+}
+
+.sliders {
+  align-items: flex-end;
+  display: block;
+  float: right;
+  height: 500px;
+  justify-content: flex-end;
+  overflow: hidden;
+  width: 500px;
+}
+
+.sliderContener {
+  display: flex;
+  height: 500px;
+  width: 500px;
+}
+
+.slider.hidden {
+  display: none;
+}
+
+.bottonHome,
+.middleHome {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.middleHome div img,
+.bottonHome div img {
+  display: flex;
+  height: 300px;
+  object-fit: cover;
+  object-position: left bottom;
+  width: 100%;
+}
+
+.one,
+.four {
+  width: 100%;
+  max-width: calc(1250px - 500px);
+}
+
+.two,
+.three {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: calc(1250px - 750px);
+}
+
+
+.bottonHome div h1,
+.middleHome div h1 {
+  margin-top: 3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bottonHome div p,
+.middleHome div p {
+  margin: 2rem 3rem 3rem 3rem;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+} 
+
+@media (max-width: 1000px) {
+  .sectionHome {
+    height: auto;
+  }
+
+  .containerHome {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .mainHome {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .mainHome p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sliders {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+  }
+
+  .sliderContener {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middleHome,
+  .bottonHome {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .bottonHome {
+    flex-direction: column-reverse;
+  }
+
+  .middleHome div p,
+  .bottonHome div p {
+    font-size: 1rem;
+  }
+
+  .one,
+  .four {
+    max-width: 100%;
+  }
+
+  .two,
+  .three {
+    height: 100%;
+    width: 100%;
+  }
+
+}
